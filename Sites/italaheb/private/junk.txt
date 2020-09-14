@@ -1,0 +1,26 @@
+/*
+CREATE TABLE stores (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+  name VARCHAR( 60 ) NOT NULL ,
+  address VARCHAR( 80 ) NOT NULL ,
+  lat FLOAT( 10, 6 ) NOT NULL ,
+  lng FLOAT( 10, 6 ) NOT NULL ,
+  line_length SMALLINT NULL,
+);
+CREATE TABLE `stores` (
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+  `name` VARCHAR( 60 ) NOT NULL ,
+  `address` VARCHAR( 80 ) NOT NULL ,
+  `lat` FLOAT( 10, 6 ) NOT NULL ,
+  `lng` FLOAT( 10, 6 ) NOT NULL ,
+  `line_length` SMALLINT UNSIGNED NULL
+) ENGINE = MYISAM ;
+
+INSERT INTO stores(`id`, `name`, `address`, `lat`, `lng`, `line_length`) VALUES (1, 'H-E-B', '1301 Guadalupe St, Laredo, TX', '27.506006', '-99.483071', '0');
+INSERT INTO stores(`id`, `name`, `address`, `lat`, `lng`, `line_length`) VALUES (2, 'H-E-B', '2314 S Zapata Hwy, Laredo, TX', '27.476503', '-99.47595', '0');
+INSERT INTO stores(`id`, `name`, `address`, `lat`, `lng`, `line_length`) VALUES (3, 'H-E-B', '2310 E Saunders, Laredo, TX', '27.530945', '-99.471306', '0');
+INSERT INTO stores(`id`, `name`, `address`, `lat`, `lng`, `line_length`) VALUES (4, 'H-E-B', '4801 San Dario Ave, Laredo, TX', '27.542129', '-99.500875', '0');
+INSERT INTO stores(`id`, `name`, `address`, `lat`, `lng`, `line_length`) VALUES (5, 'H-E-B', '7811 McPherson Rd, Laredo, TX', '27.576543', '-99.471956', '0');
+INSERT INTO stores(`id`, `name`, `address`, `lat`, `lng`, `line_length`) VALUES (6, 'H-E-B', '210 W Del Mar Blvd, Laredo, TX', '27.568097', '-99.499746', '0');
+INSERT INTO stores(`id`, `name`, `address`, `lat`, `lng`, `line_length`) VALUES (7, 'H-E-B', '1911 Bob Bullock Loop, Laredo, TX', '27.607476', '-99.473866', '0');
+*/
