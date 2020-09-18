@@ -23,6 +23,11 @@
   function update_line_length_by_id($store){
     global $db;
 
+    $errors = validate_line_input($store);
+    if(!empty($errors)){
+      return $errors;
+    }
+
     $sql = $db->prepare("UPDATE stores SET line_length = ? WHERE id = ? LIMIT 1");
     $sql->bindParam(1, $store['line_length']);
     $sql->bindParam(2, $store['id']);
@@ -38,7 +43,14 @@
     }
   }
 
+  function validate_line_input($store){
+    $errors = [];
+    if(is_blank($store['line_length'])){
+      $errors[] = "Value cannot be blank";
+    }
+    return $errors;
 
 
+  }
 
 ?>
