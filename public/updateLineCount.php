@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+
 <?php
 	require_once('../private/initialize.php');
 
@@ -22,7 +24,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 
 ?>
-<a href="<?php echo url_for('index.html');?>"> &laquo Back </a>
 <h3><?php if($errors){echo $errors[0];}?></h3>
 <h1>H-E-B<?php
 	if(isset($store['address'])){
