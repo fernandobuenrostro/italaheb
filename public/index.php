@@ -9,7 +9,6 @@
 
     <script src="gMap.js"></script>
     <script src="code.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <?php require_once('../private/initialize.php'); ?>
 
@@ -26,16 +25,14 @@
           <h2>H-E-B</h2>
           <span id="storeId"></span>
           <h2><span id="addy"></span></h2>
-
           <span id="ll"></span>
-
+          
           <form id="update-form">
             <h2>Line length: <input id="formll" type="int" name="line_length" value="stock"/></h2>
             <input id="update-button" type="button" value="Update"/>
           </form>
 
           <script>
-
             document.getElementById("update-button").addEventListener("click", post);
 
             var myFormObj = document.forms['update-form'];
@@ -50,6 +47,7 @@
             xhr.send("id="+document.getElementById("storeId").innerHTML+"&line_length="+myFormObj.elements["formll"].value);
           }
           </script>
+          
         </div>
       </div>
     </div>
