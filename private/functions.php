@@ -6,6 +6,4 @@
   }
   return WWW_ROOT . $script_path;
   }
-
-
 ?>

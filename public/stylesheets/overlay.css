@@ -1,0 +1,73 @@
+
+#ol-frame{
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+	z-index: 2;
+}
+
+#ol-frame #ol-card{
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  background: #EEEEEE;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+}
+
+#ol-frame #ol-card #ol-contents{
+	color: black;
+	position: sticky;
+	height: 40%;
+  	width: 50%;
+  	margin-left: 25%;
+  	margin-top: 20%;
+}
+
+h2{
+	font-family: serif;
+}
+
+#ol-frame #ol-card #ol-contents #update-button{
+	font-size: 1.5em;
+	margin-top: 5%;
+	margin-left: 35%;
+	float: left;
+	padding: 10px 30px;
+	border-radius: 5px;
+	background: red;
+	border: none;
+	color: white;
+	text-align: center
+}
+
+#ol-frame #ol-card #ol-contents #update-button:hover{
+	cursor: pointer;
+	background: darkred;
+}
+
+#ol-frame #ol-card #ol-contents #update-button:active{
+	transform: translateY(4px);
+}
+
+#storeId, #ll{
+	display: none;
+}
+
+#ol-frame #close-button{
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	color: black;
+	font-size: 40px;
+	font-weight: 600;
+	cursor: pointer;
+}

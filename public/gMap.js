@@ -20,7 +20,7 @@ function initMap() {
 
       var infowincontent = document.createElement('div');
       var strong = document.createElement('strong');
-      strong.textContent = name
+      strong.textContent = name;
       infowincontent.appendChild(strong);
       infowincontent.appendChild(document.createElement('br'));
 
@@ -38,7 +38,10 @@ function initMap() {
         infoWindow.open(map, marker);
       });
       marker.addListener('click', function(){
-        window.location.href = "updateLineCount?id=" + id;
+        document.getElementById("ol-frame").style.display = "block";
+        document.getElementById("storeId").innerHTML = id;
+        document.getElementById("addy").innerHTML = address;
+        document.getElementById("ll").innerHTML = line_length;
       });
     });
   });
